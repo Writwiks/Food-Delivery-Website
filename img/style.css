@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+    --navbar-height: 50px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#logo img {
+    height: 70px;
+    margin: 10px 20px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: #d20606;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a {
+    color: wheat;
+    display: block;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 2px;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 510px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url("https://cdn.pixabay.com/photo/2017/06/06/22/37/italian-cuisine-2378729_640.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home h1 {
+    color: antiquewhite;
+    text-align: center;
+}
+
+#home p {
+    color: antiquewhite;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Cormorant Garamond;
+}
+
+/* Services Section */
+#services {
+    margin: 30px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid tomato;
+    margin: 20px 5px;
+    padding: 36px;
+    border-radius: 25px;
+    background-color: rgb(240 202 202);
+}
+
+#services .box img {
+    height: 125px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* clients section */
+#client-section {
+    /* display: flex; */
+    height: 340px;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('https://cdn.pixabay.com/photo/2017/09/16/19/21/salad-2756467_640.jpg')no-repeat center center/cover;
+    height: 45%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img {
+    height: 130px;
+}
+
+.clientitem {
+    padding: 30px;
+}
+
+/* contact section */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url("../fooooooooo1.jpeg")no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+#contact-box form{
+    width: 45%;
+}
+#contact-box label{
+    font-size: 1.4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 8px 10px;
+}
+
+/* utility class */
+.primary {
+    font-size: 3.5rem;
+    padding: 12px;
+    font-family: Roboto Slab;
+    text-align: center;
+}
+
+.secondary {
+    font-size: 2.5rem;
+    padding: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.tempo {
+    font-size: 3.5rem;
+    padding: 12px;
+    font-family: Roboto Slab;
+    text-align: center;
+}
+
+.middle {
+    text-align: center;
+}
+
+.btn {
+    margin: 20px;
+    padding: 5px 20px;
+    border: 2px solid #d21f3a;
+    background-color: #d21f1fba;
+    color: white;
+    font-size: 1.4rem;
+    border-radius: 50px;
+    cursor: pointer;
+}
+/* .btn2{
+    display: flex;
+    flex-direction: column;
+    
+    margin: 20px;
+    padding: 5px 20px;
+    border: 2px solid #d21f3a;
+    background-color: #d21f1fba;
+    color: white;
+    font-size: 1.4rem;
+    border-radius: 50px;
+    cursor: pointer;
+} */
